@@ -3,6 +3,8 @@
 
 # Generated files
 **/.generated_files
+*.log*
+**/debugtool.txt
 
 # Object files
 *.o
