@@ -1,5 +1,5 @@
 /* sequences.c
- * 
+ *
  * Executes sequences of LED settings to control LEDs.
  */
 
@@ -23,16 +23,16 @@ static SEQUENCE_CONTROL seq_control;
 void sequence_executor(void)
 {
     IO_RB0_Toggle();
-    
+
     // If the LED handler is busy, we can't do anything.
     if (true == led_output.busy) {
         IO_RB0_Toggle();
         return;
     }
-   
+
     register SEQUENCE_CONTROL *pSeq = &seq_control;
     register LED_STEP *pStep = &pSeq->step;
-            
+
     // If waiting, wait.
     IO_RD8_Toggle();
     if (pSeq->delay < pStep->delay) {
@@ -42,7 +42,7 @@ void sequence_executor(void)
 
     // Reset the delay value, accounting for the minimum LED time as measured empirically.
     pSeq->delay = 550;
-    
+
     // Set the color for the LEDs in the mask.
     register uint8_t red = reverse(pStep->leds.color.r.value);
     register uint8_t green = reverse(pStep->leds.color.g.value);
@@ -55,14 +55,13 @@ void sequence_executor(void)
     }
 
     led_resetbitpos();
-    
+
     // Adjust for the next time.
     register LED_COLOR_VALUE *color = &pStep->leds.values[0];
     for (int j = 0; j < LED_DATA_BYTES; j++) {
-        if ((color->value + color->step) > 255) color->value = 255;
+        if ((color->value + color->step) > 255.0) color->value = 255.0;
         if ((color->value + color->step) < 0) color->value = 0;
         else color->value += color->step;
-        
         color++;
     }
 
@@ -71,7 +70,7 @@ void sequence_executor(void)
         if (++pSeq->index < pSeq->count) {
             memcpy(&pSeq->step, &pSeq->steps[pSeq->index], sizeof(LED_STEP));
             pSeq->delay = 0;
-            
+
         } else {
             // No longer busy.
             pSeq->busy = false;
@@ -105,7 +104,7 @@ void sequence_delay(uint16_t usec)
 bool run_sequence(SEQUENCE_ID id)
 {
     bool retval = false;
-    
+
     if (id < MAX_SEQUENCES) {
         while (true == seq_control.busy);
         seq_control.busy = true;
@@ -117,17 +116,17 @@ bool run_sequence(SEQUENCE_ID id)
 
         memcpy(&seq_control.step, &seq_control.steps[0], sizeof(LED_STEP));
         seq_control.delay = 0;
-       
+
         retval = true;
 
         DEBUG_PRINT("  Seq: %s\r\n", sequences[id].desc);
-        
+
         // Run the stepper.
         while (seq_control.busy) {
             sequence_executor();
             sequence_delay(SEQ_TIMER_PERIOD_USECS);
         }
     }
-    
+
     return retval;
 }

@@ -4,7 +4,11 @@
 # NOCDDL
 #
 CND_BASEDIR=`pwd`
-# default configuration
-CND_ARTIFACT_DIR_default=dist/default/production
-CND_ARTIFACT_NAME_default=eyes.X.production.hex
-CND_ARTIFACT_PATH_default=dist/default/production/eyes.X.production.hex
+# Joe configuration
+CND_ARTIFACT_DIR_Joe=dist/Joe/production
+CND_ARTIFACT_NAME_Joe=eyes.X.production.hex
+CND_ARTIFACT_PATH_Joe=dist/Joe/production/eyes.X.production.hex
+# Skull configuration
+CND_ARTIFACT_DIR_Skull=dist/Skull/production
+CND_ARTIFACT_NAME_Skull=eyes.X.production.hex
+CND_ARTIFACT_PATH_Skull=dist/Skull/production/eyes.X.production.hex
