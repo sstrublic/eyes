@@ -67,6 +67,7 @@ typedef enum {
     WINK_LEFT_HAPPY,
     WINK_RIGHT_HAPPY,
     SET_DISTANCE,
+    REJECT_DISTANCE,
     MAX_SEQUENCES,
             
 } SEQUENCE_ID;

@@ -311,11 +311,22 @@ LED_STEP winkrightblue[] =
     },
 };
 
-// Set distance.
+// Set distance setpoint.
 LED_STEP set_distance[] =   
 {
     { .count = 256, .mask = 0xFFFF, .delay = 4000,
       .leds = { .color.r = {0xFF, -1.0}, .color.g = {0, 0}, .color.b = {0xFF, -1.0} }
+    },
+    { .count = 100, .mask = 0xFFFF, .delay = 1000,
+      .leds = { .color.r = {0, 0}, .color.g = {0, 0}, .color.b = {0, 0} }
+    }
+};
+
+// Reject setpoint.
+LED_STEP reject_distance[] =   
+{
+    { .count = 256, .mask = 0xFFFF, .delay = 4000,
+      .leds = { .color.r = {0xFF, -1.0}, .color.g = {0xFF, -1.0}, .color.b = {0, 0} }
     },
     { .count = 100, .mask = 0xFFFF, .delay = 1000,
       .leds = { .color.r = {0, 0}, .color.g = {0, 0}, .color.b = {0, 0} }
@@ -340,4 +351,5 @@ SEQUENCE sequences[MAX_SEQUENCES] =
     {(sizeof(winkleftblue) / sizeof(LED_STEP)), "Wink Left", winkleftblue},
     {(sizeof(winkrightblue) / sizeof(LED_STEP)), "Wink Right", winkrightblue},
     {(sizeof(set_distance) / sizeof(LED_STEP)), "Set Distance", set_distance},
+    {(sizeof(reject_distance) / sizeof(LED_STEP)), "Reject Distance", reject_distance},
 };
