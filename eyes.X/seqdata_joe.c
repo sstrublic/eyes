@@ -89,19 +89,19 @@ LED_STEP powerup[] =
 LED_STEP wakeupblue[] =
 {
     { .count = 32, .mask = 0x1010, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x2828, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x4444, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x8282, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0101, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
 };
 
@@ -109,19 +109,19 @@ LED_STEP wakeupblue[] =
 LED_STEP wakeupred[] =
 {
     { .count = 32, .mask = 0x1010, .delay = 550,
-      .leds = { .color.r = {0, 8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0, 4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x2828, .delay = 550,
-      .leds = { .color.r = {0, 8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0, 4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x4444, .delay = 550,
-      .leds = { .color.r = {0, 8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0, 4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x8282, .delay = 550,
-      .leds = { .color.r = {0, 8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0, 4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x0101, .delay = 550,
-      .leds = { .color.r = {0, 8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0, 4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
 };
 
@@ -129,19 +129,19 @@ LED_STEP wakeupred[] =
 LED_STEP sleepblue[] =
 {
     { .count = 32, .mask = 0x0101, .delay = 750,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x8282, .delay = 750,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x4444, .delay = 750,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x2828, .delay = 750,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x1010, .delay = 750,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
 };
 
@@ -149,19 +149,19 @@ LED_STEP sleepblue[] =
 LED_STEP sleepred[] =
 {
     { .count = 32, .mask = 0x0101, .delay = 750,
-      .leds = { .color.r = {0xF7, -8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0x7C, -4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x8282, .delay = 750,
-      .leds = { .color.r = {0xF7, -8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0x7C, -4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x4444, .delay = 750,
-      .leds = { .color.r = {0xF7, -8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0x7C, -4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x2828, .delay = 750,
-      .leds = { .color.r = {0xF7, -8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0x7C, -4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x1010, .delay = 750,
-      .leds = { .color.r = {0xF7, -8.0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0x7C, -4.0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
 };
 
@@ -169,7 +169,7 @@ LED_STEP sleepred[] =
 LED_STEP angry[] =
 {
     { .count = 128, .mask = 0xFFFF, .delay = 700,
-      .leds = { .color.r = {0, 2.0}, .color.g = {0x4C, -0.6}, .color.b = {0xFD, -2.0} }
+      .leds = { .color.r = {0, 1.0}, .color.g = {0x25, -0.3}, .color.b = {0x7E, -1.0} }
     }
 };
 
@@ -177,13 +177,13 @@ LED_STEP angry[] =
 LED_STEP warn[] =
 {
     { .count = 32, .mask = 0xFFFF, .delay = 1000,
-      .leds = { .color.r = {0, 8.0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 4.0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 100, .mask = 0xFFFF, .delay = 1000,
-      .leds = { .color.r = {0xFF, 0}, .color.g = {0, 0}, .color.b = {0, 0} }
+      .leds = { .color.r = {0x80, 0}, .color.g = {0, 0}, .color.b = {0, 0} }
     },
     { .count = 256, .mask = 0xFFFF, .delay = 2500,
-      .leds = { .color.r = {0xFE, -1.0}, .color.g = {0, 0.3}, .color.b = {0, 1.0} }
+      .leds = { .color.r = {0x7E, -0.5}, .color.g = {0, 0.15}, .color.b = {0, 0.5} }
     }
 };
 
@@ -191,7 +191,7 @@ LED_STEP warn[] =
 LED_STEP happy[] =
 {
     { .count = 256, .mask = 0xFFFF, .delay = 1500,
-      .leds = { .color.r = {0xFE, -1.0}, .color.g = {0, 0.3}, .color.b = {0, 1.0} }
+      .leds = { .color.r = {0x7E, -0.5}, .color.g = {0, 0.15}, .color.b = {0, 0.5} }
     }
 };
 
@@ -200,37 +200,37 @@ LED_STEP happy[] =
 LED_STEP blinkblue[] =
 {
     { .count = 32, .mask = 0x0101, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x8282, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x4444, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x2828, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x1010, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 20, .mask = 0xFFFF, .delay = 1500,
       .leds = { .color.r = {0, 0}, .color.g = {0, 0.0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x1010, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x2828, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x4444, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x8282, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0101, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
 };
 
@@ -238,37 +238,37 @@ LED_STEP blinkblue[] =
 LED_STEP winkleftblue[] =
 {
     { .count = 32, .mask = 0x0001, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x0082, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x0044, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x0028, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x0010, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 200, .mask = 0x00FF, .delay = 1000,
       .leds = { .color.r = {0, 0}, .color.g = {0, 0.0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x0010, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0028, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0044, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0082, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0001, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
 };
 
@@ -277,37 +277,37 @@ LED_STEP winkleftblue[] =
 LED_STEP winkrightblue[] =
 {
     { .count = 32, .mask = 0x0100, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x8200, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x4400, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x2800, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 32, .mask = 0x1000, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0x4B, -2.4}, .color.b = {0xF7, -8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0x25, -1.2}, .color.b = {0x7C, -4.0} }
     },
     { .count = 200, .mask = 0xFF00, .delay = 1000,
       .leds = { .color.r = {0, 0}, .color.g = {0, 0.0}, .color.b = {0, 0} }
     },
     { .count = 32, .mask = 0x1000, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x2800, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x4400, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x8200, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
     { .count = 32, .mask = 0x0100, .delay = 550,
-      .leds = { .color.r = {0, 0}, .color.g = {0, 2.4}, .color.b = {0, 8.0} }
+      .leds = { .color.r = {0, 0}, .color.g = {0, 1.2}, .color.b = {0, 4.0} }
     },
 };
 
